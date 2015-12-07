@@ -1,0 +1,21 @@
+{% extends 'layout.html' %}
+
+{% block title %}Company:  {{title}}{% endblock %}
+
+{% block content %}
+<div class="page-header">
+    <h1>{{company.company}}</h1>
+</div>
+<div class="row">
+    <div class="col-md-12">
+        <h4>Country:</h4>
+        <p>{{company.country}}</p>
+        <h4>Founding date:</h4>
+        <p>{{company.founding_date}}</p>
+        <h4>Phone:</h4>
+        <p>{{company.phone}}</p>
+        <h4>Description:</h4>
+        <p>{{company.discription}}</p>
+    </div>
+</div>
+{% endblock %}

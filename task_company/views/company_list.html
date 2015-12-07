@@ -1,0 +1,21 @@
+{% extends 'layout.html' %}
+
+{% block title %}{{title}}{% endblock %}
+
+{% block content %}
+<div class="page-header">
+    <h1>Company list</h1>
+</div>
+<div class="row table-header">
+    <div class="col-md-4">Company</div>
+    <div class="col-md-4">Country</div>
+    <div class="col-md-4">Phone</div>
+</div>
+{% for comp in companies %}
+<div class="row table-rows">
+    <div class="col-md-4"><a href="company/{{comp._id}}">{{comp.company}}</a></div>
+    <div class="col-md-4">{{comp.country}}</div>
+    <div class="col-md-4">{{comp.phone}}</div>
+</div>
+{% endfor %}
+{% endblock %}

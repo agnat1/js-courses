@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>{% block title %}My Site{% endblock %}</title>
+    <link href="/assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/assets/css/style.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        {% block content %}{% endblock %}
+        <div class="row">
+            <div class="col-md-4 col-md-offset-4">
+                <h5>Footer :)</h5>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
