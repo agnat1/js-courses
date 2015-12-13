@@ -2,9 +2,28 @@
 
 {% block title %}{{title}}{% endblock %}
 
+{% block scripts %}
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="/assets/js/autoComplete.js"></script>
+    <script src="/assets/js/main.js"></script>
+    <script>
+        $(document).ready(function(){
+            autoCompleteInit();
+        });
+    </script>
+{% endblock %}
+
 {% block content %}
 <div class="page-header">
     <h1>Company list</h1>
+</div>
+<div class="row search-block">
+    <div class="col-md-12">
+        <form id="search-form" method="get">
+            Find <input id="search" type="text" name="q" autocomplete="off" placeholder="Start typing...">
+            <input type="button" id="search-submit" value="Go">
+        </form>
+    </div>
 </div>
 <div class="row table-header">
     <div class="col-md-4">Company</div>
