@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>AngularJS - 1st home work</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="assets/js/vendor/angular.min.1.4.8.js"></script>
+    <script src="assets/js/core/app.js"></script>
+    <script src="assets/js/core/LangController.js"></script>
+    <script src="assets/js/core/LangsData.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 header-container center-text">
+                <h3>AngularJS - Lesson 1</h3>
+            </div>
+        </div>
+        <div class="row" ng-app="myApp">
+            <div class="col-md-12" ng-controller="LangController">
+                <div class="row">
+                    <div class="col-md-4">
+                        Lang:
+                        <input type="text" ng-model="lang">
+                        <button ng-click="addLang()">OK</button>
+                    </div>
+                    <div class="col-md-8" ng-show="lang.length">
+                        I wanna add "{{lang}}" to the list
+                    </div>
+                </div>
+                <div class="row langs-list">
+                    <div class="col-md-12">
+                        <h5>I know next languages:</h5>
+                    </div>
+                    <div class="col-md-12">
+                        <ul>
+                            <li ng-repeat="item in langList track by $index">{{item}}</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

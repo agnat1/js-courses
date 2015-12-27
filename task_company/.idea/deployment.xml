@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PublishConfigData" serverName="Ubuntu Local NodeJS" createEmptyFolders="true" filePermissions="511" folderPermissions="511" autoUploadExternalChanges="true">
+    <serverData>
+      <paths name="Ubuntu Local NodeJS">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/opt/www/kursy/task_company" local="$PROJECT_DIR$" web="/company" />
+          </mappings>
+        </serverdata>
+      </paths>
+    </serverData>
+  </component>
+</project>
