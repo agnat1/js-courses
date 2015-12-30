@@ -8,13 +8,8 @@
             return langs;
         }
 
-        this.add = function(lang){
-            langs.push(lang);
-            return this;
-        }
-
-        this.addAndGet = function(lang){
-            return this.add(lang).get();
+        this.hasLang = function(lang){
+            return (langs.indexOf(lang) > -1);
         }
     }
 

@@ -8,5 +8,8 @@
 
 .langs-list {
   margin-top: 15px; }
+  .langs-list .remove-btn {
+    background-color: #F3A7A7;
+    border-radius: 10px; }
 
 /*# sourceMappingURL=style.css.map */

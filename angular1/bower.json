@@ -1,0 +1,15 @@
+{
+  "name": "angular1",
+  "description": "angular first task",
+  "main": "./index.html",
+  "moduleType": [
+    "es6",
+    "globals"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "dependencies": {
+    "angular": "1.4.8",
+    "bootstrap": "~3.3.6"
+  }
+}

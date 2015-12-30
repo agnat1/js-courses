@@ -3,9 +3,9 @@
 <head lang="en">
     <meta charset="UTF-8">
     <title>AngularJS - 1st home work</title>
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/libs/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
-    <script src="assets/js/vendor/angular.min.1.4.8.js"></script>
+    <script src="assets/libs/angular/angular.min.js"></script>
     <script src="assets/js/core/app.js"></script>
     <script src="assets/js/core/LangController.js"></script>
     <script src="assets/js/core/LangsData.js"></script>
@@ -35,7 +35,7 @@
                     </div>
                     <div class="col-md-12">
                         <ul>
-                            <li ng-repeat="item in langList track by $index">{{item}}</li>
+                            <li ng-repeat="item in langList">{{item}}  <button ng-click="remove($index)" class="remove-btn">X</button></li>
                         </ul>
                     </div>
                 </div>
